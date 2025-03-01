@@ -1,0 +1,39 @@
+#mount-fuji {
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+}
+
+#cloud1 {
+    animation: move 45s linear infinite;
+}
+
+#cloud2 {
+    animation: move1 20s linear infinite;
+}
+
+#cloud3 {
+    animation: move 20s linear infinite;
+}
+
+#cloud4 {
+    animation: move1 45s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-60%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes move1 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
