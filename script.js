@@ -1,8 +1,12 @@
-window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    const text1 = document.getElementById('text1');
 
-    loader.classList.add("loader-hidden");
-    loader.addEventListener("transitionend", () => {
+    text1.addEventListener('animationend', () => {
+        loader.classList.add('loader-hidden');
+    });
+    loader.addEventListener('transitionend', () => {
         document.body.removeChild(loader);
+        document.body.style.overflowY = 'auto';
     });
 });
